@@ -1,0 +1,43 @@
+.about-me {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex; /*display flex wiec mozna dac na dzieicach flex*/
+}
+
+.left-column {
+  flex: 0.5; /*ile zajmuje szerokosc*/
+
+  display: flex;
+  align-items: center;
+}
+
+.right-column {
+  flex: 0.5; /*ile zajmuje szerokosc*/
+  overflow: hidden;
+}
+
+.information {
+  height: 400px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10%;
+}
+
+.information > h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+.information > p {
+  font-size: 20px;
+}
+
+.right-column > img {
+  width: 80%;
+  object-fit: cover;
+  pointer-events: none;
+}
